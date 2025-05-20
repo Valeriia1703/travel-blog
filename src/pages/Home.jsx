@@ -1,3 +1,10 @@
-export default function Home() {
-  return <div>Главная страница — список путешествий</div>;
+import { HeroImage } from '../components/HeroComponent/Hero';
+
+export default function HomePage() {
+  return (
+    <>
+      <HeroImage />
+      {/* другие секции */}
+    </>
+  );
 }
