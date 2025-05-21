@@ -1,6 +1,6 @@
 import { Button, Container, Text, Title, Space, Image, useMantineColorScheme } from '@mantine/core';
 import classes from './HeroAbout.module.css';
-import AboutImage from "../src/assets/AboutImage.jpg";
+import AboutImage from "../../assets/AboutImage.jpg";
 
 
 export function HeroAbout() {
@@ -114,7 +114,7 @@ export function HeroAbout() {
                                 Где я была:
                             </h3>
                             <Text className={classes.description} mt={30} c={textColor}>
-                                Несколько стран в Европе, несколько городов в Азии, и та самая поездка в [место], после которой поняла, что хочу делиться этими историями.
+                                Несколько стран в Европе, о. Хайнань в Азии, и та самая поездка в [место], после которой поняла, что хочу делиться этими историями.
                                 Этот блог — как разговор с другом за бокалом вина: честно, без пафоса и с парой забавных провалов.
                             </Text>
 
