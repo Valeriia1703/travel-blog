@@ -1,5 +1,6 @@
 import { Button, Container, Text, Title, Space, Image, useMantineColorScheme } from '@mantine/core';
 import classes from './HeroAbout.module.css';
+import AboutImage from "../src/assets/AboutImage.jpg";
 
 
 export function HeroAbout() {
@@ -124,7 +125,7 @@ export function HeroAbout() {
                                 radius="md"
                                 w="auto"
                                 fit="contain"
-                                src="../src/assets/AboutImage.jpg"
+                                src={AboutImage}
                             />
                         </div>
                     </div>
