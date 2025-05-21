@@ -9,7 +9,7 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
-      <MantineProvider defaultColorScheme="auto">
+      <MantineProvider defaultColorScheme="dark">
         <App />
       </MantineProvider>
     </HashRouter>

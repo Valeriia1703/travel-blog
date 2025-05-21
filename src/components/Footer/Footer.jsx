@@ -7,16 +7,16 @@ export function Footer() {
     return (
         <div className={classes.footer}>
             <Container className={classes.inner} size="xl">
-                <Logo size={28} />
-                <Group gap={0} className={classes.links} justify="flex-end" wrap="nowrap">
-                    <ActionIcon size="lg" color="gray" variant="subtle">
-                        <IconBrandTwitter size={18} stroke={1.5} />
+                <Logo />
+                <Group gap={15} className={classes.links} justify="flex-end" wrap="nowrap">
+                    <ActionIcon size="lg" color="#40c6d5" variant="subtle" >
+                        <IconBrandTwitter size={24} stroke={1.5} />
                     </ActionIcon>
-                    <ActionIcon size="lg" color="gray" variant="subtle">
-                        <IconBrandYoutube size={18} stroke={1.5} />
+                    <ActionIcon size="lg" color="#40c6d5" variant="subtle">
+                        <IconBrandYoutube size={24} stroke={1.5} />
                     </ActionIcon>
-                    <ActionIcon size="lg" color="gray" variant="subtle">
-                        <IconBrandInstagram size={18} stroke={1.5} />
+                    <ActionIcon size="lg" color="#40c6d5" variant="subtle">
+                        <IconBrandInstagram size={24} stroke={1.5} />
                     </ActionIcon>
                 </Group>
             </Container>

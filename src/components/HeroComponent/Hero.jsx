@@ -18,7 +18,7 @@ export function HeroImage() {
                             >
                                 мир путешествий
                             </Text>{' '}
-                            вместе с нашим блогом
+                            вместе с моим блогом
                         </Title>
 
                         <Text className={classes.description} mt={30}>

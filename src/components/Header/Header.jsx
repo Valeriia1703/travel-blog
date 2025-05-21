@@ -30,6 +30,7 @@ export function Header() {
             className={({ isActive }) =>
                 `${classes.link} ${isActive ? classes.active : ''}`
             }
+            style={{ color: isDark ? '#f5f4f4' : '#181818', }}
         >
             {link.label}
         </NavLink>
