@@ -6,7 +6,6 @@
         linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%),
         url(/src/assets/hero-image.jpg);
     padding-top: 96px;
-    /* var(--mantine-spacing-xl) * 3 */
     padding-bottom: 96px;
 }
 
@@ -76,9 +75,9 @@
     padding-right: 50px;
     font-family: Outfit, sans-serif;
     font-size: 22px;
+    transition: transform 0.3s ease;
 }
 
-.control:hover .mantine-Button-gradientOverlay {
-    filter: brightness(0.9) !important;
-    transition: filter 0.2s ease;
+.control:hover {
+    transform: translateY(-5px);
 }

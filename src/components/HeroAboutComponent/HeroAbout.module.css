@@ -1,0 +1,189 @@
+.root {
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.inner {
+    align-items: start;
+}
+
+.innerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Общие стили для изображения */
+.image {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    box-shadow: 15px 15px 0 0 light-dark(#1a4f55, #40c6d5);
+    object-fit: contain;
+}
+
+/* Остальные стили */
+.content {
+    flex: 1;
+}
+
+.title {
+    font-family: Outfit, sans-serif;
+    font-weight: 500;
+    line-height: 1.05;
+    max-width: 500px;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.description {
+    opacity: 0.75;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.control {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Outfit, sans-serif;
+    font-size: 22px;
+}
+
+h3 {
+    opacity: 0.75;
+    margin-bottom: 15px;
+}
+
+/* Мобильные (до 576px) */
+@media (max-width: 575.98px) {
+    .innerContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        order: -1;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 25px;
+    }
+
+    .image img {
+        max-height: 400px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+
+}
+
+/* Планшеты (576px - 991.98px) */
+@media (min-width: 576px) and (max-width: 1023.98px) {
+    .innerContent {
+        flex-direction: column;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        order: -1;
+        margin: 0 auto 40px;
+    }
+
+    .image img {
+        max-height: 600px;
+    }
+
+    .title {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    .description {
+
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1365.98px) {
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+
+        margin: 0 auto 40px;
+    }
+
+    .image img {
+        max-height: 600px;
+    }
+
+    .title {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    .description {
+        max-width: 500px;
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 1366px) {
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+
+        margin: 0 auto 40px;
+    }
+
+    .image img {
+        max-height: 800px;
+    }
+
+    .title {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+}

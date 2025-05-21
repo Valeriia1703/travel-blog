@@ -11,3 +11,7 @@ h3,
 .logo {
   font-family: 'Playfair Display', serif;
 }
+
+p {
+  margin-top: 20px !important;
+}

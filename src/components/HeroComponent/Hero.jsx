@@ -4,7 +4,7 @@ import classes from './Hero.module.css';
 export function HeroImage() {
     return (
         <div className={classes.root}>
-            <Container size="lg">
+            <Container size="xl">
                 <div className={classes.inner}>
                     <div className={classes.content}>
                         <Title className={classes.title} order={1} style={{ fontFamily: 'Playfair Display' }}>
