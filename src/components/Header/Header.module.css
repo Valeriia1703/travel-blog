@@ -62,3 +62,13 @@
     top: 0;
     transform: translateX(0);
 }
+
+.hideOnMobile {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
