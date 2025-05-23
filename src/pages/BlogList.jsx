@@ -2,26 +2,16 @@ import { useState } from 'react';
 import { Container, SimpleGrid } from '@mantine/core';
 import BlogCard from '../components/BlogCard/BlogCard';
 import AddCard from '../components/AddCard/AddCard';
+import { useBlogStore } from '../store/blogStore';
+
 
 export default function BlogList() {
-    const [articles, setArticles] = useState([
-        {
-            title: 'Top 10 places to visit in Norway this summer',
-            image: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=720&q=80',
-            date: 'August 18, 2022',
-        },
-        {
-            title: 'Best forests to visit in North America',
-            image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=720&q=80',
-            date: 'August 27, 2022',
-        },
-    ]);
+    const articles = useBlogStore((state) => state.articles);
+    const addArticle = useBlogStore((state) => state.addArticle);
 
     const isAdmin = localStorage.getItem('isAdmin') === 'true';
 
-    const handleAdd = (newArticle) => {
-        setArticles((prev) => [...prev, newArticle]);
-    };
+    const removeArticle = useBlogStore((state) => state.removeArticle);
 
     return (
         <Container py="xl" size="xl">
@@ -31,9 +21,9 @@ export default function BlogList() {
                 verticalSpacing={{ base: 'md', sm: 'xl' }}
             >
                 {articles.map((article) => (
-                    <BlogCard key={article.title + article.date} article={article} />
+                    <BlogCard isAdmin={isAdmin} key={article.title + article.date} article={article} onDelete={() => removeArticle(article.title, article.date)} />
                 ))}
-                {isAdmin && <AddCard onAdd={handleAdd} />}
+                {isAdmin && <AddCard onAdd={addArticle} />}
             </SimpleGrid>
         </Container>
     );

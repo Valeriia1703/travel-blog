@@ -18,21 +18,21 @@ export function HeroAbout() {
         <div className={classes.root}>
             <Container size="xl">
                 <div className={classes.inner}>
-                    <Title className={classes.title} order={1} style={{ fontFamily: 'Playfair Display' }}>
+                    <Title className={classes.title} order={1} style={{ fontFamily: 'Domine' }}>
                         Обо мне
                     </Title>
                     <div className={classes.innerContent}>
                         <div className={classes.content}>
                             <h3
                                 className={classes.h3}
-                                style={{ fontFamily: 'Playfair Display', color: isDark ? '#f5f4f4' : '#181818', textAlign: 'center' }}>
+                                style={{ fontFamily: 'Domine', color: isDark ? '#f5f4f4' : '#181818', textAlign: 'center' }}>
                                 Привет, я {' '}
                                 <Text
                                     component="span"
                                     inherit
                                     variant="gradient"
                                     gradient={textGradient}
-                                    style={{ fontFamily: 'Playfair Display' }}
+                                    style={{ fontFamily: 'Domine' }}
                                 >
                                     Юлия
                                 </Text>
@@ -44,7 +44,7 @@ export function HeroAbout() {
 
                             <h3
                                 className={classes.h3}
-                                style={{ fontFamily: 'Playfair Display', color: isDark ? '#f5f4f4' : '#181818' }}>
+                                style={{ fontFamily: 'Domine', color: isDark ? '#f5f4f4' : '#181818' }}>
                                 Почему я пишу:
                             </h3>
                             <ul>
@@ -61,7 +61,7 @@ export function HeroAbout() {
                             </ul>
                             <h3
                                 className={classes.h3}
-                                style={{ fontFamily: 'Playfair Display', color: isDark ? '#f5f4f4' : '#181818' }}>
+                                style={{ fontFamily: 'Domine', color: isDark ? '#f5f4f4' : '#181818' }}>
                                 Мой стиль:
                             </h3>
                             <ul>
@@ -110,11 +110,14 @@ export function HeroAbout() {
                             </ul>
                             <h3
                                 className={classes.h3}
-                                style={{ fontFamily: 'Playfair Display', color: isDark ? '#f5f4f4' : '#181818' }}>
+                                style={{ fontFamily: 'Domine', color: isDark ? '#f5f4f4' : '#181818' }}>
                                 Где я была:
                             </h3>
                             <Text className={classes.description} mt={30} c={textColor}>
-                                Несколько стран в Европе, о. Хайнань в Азии, и та самая поездка на {' '}
+                                Несколько стран в Европе, Китай о. Хайнань, великолепная Грузия, Армения(Ереван) транзитом.
+                            </Text>
+                            <Text className={classes.description} mt={30} c={textColor}>
+                                Конечно, Россия, любимый для многих Калининград, наш прекрасный север-Мурманск и та самая поездка на {' '}
                                 <Text
                                     component="span"
                                     inherit

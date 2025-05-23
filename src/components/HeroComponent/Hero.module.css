@@ -22,11 +22,11 @@
 
 .title {
     color: white;
-    font-family: Playfair Display, sans-serif;
+    font-family: Domine, sans-serif;
     font-weight: 500;
     line-height: 1.05;
-    max-width: 80%;
-    font-size: 48px;
+    max-width: 70%;
+    font-size: 52px;
 }
 
 .description {
@@ -68,7 +68,7 @@
 
     .title {
         color: white;
-        font-family: Playfair Display, sans-serif;
+        font-family: Domine, sans-serif;
         font-weight: 500;
         max-width: 100%;
         font-size: 28px;
@@ -105,9 +105,9 @@
 
     .title {
         color: white;
-        font-family: Playfair Display, sans-serif;
+        font-family: Domine, sans-serif;
         font-weight: 500;
-        max-width: 80%;
+        max-width: 70%;
         font-size: 34px;
         line-height: 1.15;
     }
@@ -137,10 +137,10 @@
 
     .title {
         color: white;
-        font-family: Playfair Display, sans-serif;
+        font-family: Domine, sans-serif;
         font-weight: 500;
-        max-width: 80%;
-        font-size: 38px;
+        max-width: 70%;
+        font-size: 42px;
         line-height: 1.15;
     }
 

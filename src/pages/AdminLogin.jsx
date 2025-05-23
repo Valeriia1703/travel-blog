@@ -39,7 +39,7 @@ export default function AdminLogin() {
                 style={{
                     textAlign: 'center',
                     marginBottom: '20px',
-                    fontFamily: 'Playfair Display, sans-serif',
+                    fontFamily: 'Domine, sans-serif',
                     color: color,
                 }}
             >
